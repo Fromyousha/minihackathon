@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap');
+
+
+
+
+ul{
+
+
+    display: flex;
+   
+}
+ul a #log{
+    float: right;
+}
+#head{
+    align-items: center;
+    margin-top: 10px;
+margin-left: 20px;
+}
+#logpage{
+    width: 400px;
+height: 100%;
+border-radius: 10px;
+padding: 20px;
+}
+#publish{
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+
+}
+#profile{
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+#maincontainer{
+    width: 500px;
+    height: 100%;
+    
+    padding: 20px;
+}

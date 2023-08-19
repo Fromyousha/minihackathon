@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Reset some default styles */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: rgb(167, 80, 167);
+            overflow: hidden;
+
+        }
+
+        /* Left heading */
+        .navbar .left-heading {
+            float: left;
+            padding: 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        /* Right login button */
+        .navbar .right-login {
+            float: right;
+            padding: 10px;
+
+        }
+
+        button {
+            background-color: rgb(167, 80, 167);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+
+        /* Style the login button */
+        .navbar .right-login a {
+
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+
+        /* Responsive design */
+        @media screen and (max-width: 600px) {
+
+            .navbar .left-heading,
+            .navbar .right-login {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left-heading">Personal Blogging App</div>
+        <div class="right-login">
+            <a href="./login.html">Login</a>
+        </div>
+    </div>
+    <div id="head">
+        <h4>Profile</h4>
+    </div>
+    <br><br>
+    <center>
+        <div id="profile" class="shadow p-3 mb-5 bg-body rounded">
+            <div id="main" style="width: 300px;">
+
+
+                <div id="profileimg">
+                    <img src="" alt="" id="myimg" width="300px" style="border-radius: 10px;">
+                </div>
+                <br>
+                <input type="text" name="" id="pname" placeholder="Name"><br>
+                <input type="text" id="opass" placeholder="Old Password"><br>
+                <input type="text" id="npass" placeholder="New Password"><br>
+                <input type="text" id="rpass" placeholder="Repeat Password"><br>
+                <input type="file" name="" id="fileimg">
+                <button id="btn">Update Profile</button>
+            </div>
+        </div>
+
+    </center>
+
+    <script type="module" src="./profile.js"></script>
+
+</body>
+
+</html>

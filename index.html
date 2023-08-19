@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Reset some default styles */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: rgb(167, 80, 167);
+            overflow: hidden;
+
+        }
+
+        /* Left heading */
+        .navbar .left-heading {
+            float: left;
+            padding: 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        /* Right login button */
+        .navbar .right-login {
+            float: right;
+            padding: 10px;
+
+        }
+
+        button {
+            background-color:rgb(167, 80, 167);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+
+        /* Style the login button */
+        .navbar .right-login a {
+
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 600px) {
+
+            .navbar .left-heading,
+            .navbar .right-login {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="navbar">
+        <div class="left-heading">Personal Blogging App</div>
+
+        <div class="right-login">
+
+            <a href="./blogs.html" style="color: white;list-style: none;">All blogs</a>
+            <a href="./profile.html" style="color: white;list-style: none;">Profile</a>
+
+            <a id="change" href="./login.html">Login</a>
+        </div>
+    </div>
+    <div id="head">
+        <h4>Dashboard</h4>
+    </div>
+    <br><br>
+    <center>
+
+        <div id="publish" class="shadow p-3 mb-5 bg-body rounded">
+            <input type="text" id="postname" placeholder="Placeholder"><br>
+            <textarea name="" id="postArea" cols="30" rows="5" placeholder="What is in your mind">
+            </textarea><br>
+            <button id="published">Publish Blog</button>
+        </div>
+    </center>
+    <br><br>
+    <div id="show" style="height: 100%;">
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <script type="module" src="./index.js"></script>
+    <!-- <script type="module" src="./profile.js"></script> -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
